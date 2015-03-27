@@ -13,7 +13,7 @@
         <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
         <asp:Button ID="btnSearch" runat="server" OnClick="btnSearch_Click" Text="查詢" />
         <br />
-        <asp:ListBox ID="lbResult" runat="server" Height="206px" Width="213px"></asp:ListBox>
+        <asp:ListBox ID="lbResult" runat="server" Height="206px" Width="213px" OnSelectedIndexChanged="lbResult_SelectedIndexChanged"></asp:ListBox>
     </div>
     </form>
 </body>

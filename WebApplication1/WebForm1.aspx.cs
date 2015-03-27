@@ -42,5 +42,10 @@ namespace WebApplication1
             }
         }
 
+        protected void lbResult_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
