@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class homework0327_2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,8 +24,8 @@ namespace WebApplication1
                 cn.Open();
                 using (SqlCommand cmd = cn.CreateCommand())
                 {
-                    cmd.CommandText = "select * from employees where Name like @name";
-                    cmd.Parameters.Add(new SqlParameter("@name", "%" + txtSearch.Text + "%"));
+                    cmd.CommandText = "select * from Students where stu_id like @stu_id";
+                    cmd.Parameters.Add(new SqlParameter("@stu_id", "%" + txtSearch.Text + "%"));
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         DataTable dt = new DataTable();
@@ -38,6 +38,5 @@ namespace WebApplication1
 
             }
         }
-
     }
 }

@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="homework0327-2.aspx" />
     <Content Include="homework0327.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -65,6 +66,13 @@
     <Content Include="WebForm4.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="homework0327-2.aspx.cs">
+      <DependentUpon>homework0327-2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homework0327-2.aspx.designer.cs">
+      <DependentUpon>homework0327-2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="homework0327.aspx.cs">
       <DependentUpon>homework0327.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
